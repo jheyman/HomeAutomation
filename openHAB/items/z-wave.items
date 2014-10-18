@@ -1,0 +1,49 @@
+Group:Switch:OR(ON, OFF) 		lumieres 		"Toutes lumieres [(%d)]"
+Group:Switch:OR(ON, OFF) 		entree_mode_eco 		"Sources [(%d)]"
+Group:Switch:OR(ON, OFF) 		sortie_mode_eco 		"Sources [(%d)]"
+
+/* Lumieres */ 
+Switch	LumiereSalon		"Lumiere Salon"		(lumieres)		{ zwave="8" }
+Switch	LumiereSdbTbb		"Lumiere SdB TBB"	(lumieres)		{ zwave="14" }
+Switch	LumiereDressing		"Lumiere Dressing"	(lumieres)		{ zwave="16" }
+Switch	LumiereChambre		"Lumiere Chambre"	(lumieres)		{ zwave="18" }
+Switch	LumiereSdbGbb		"Lumiere SdB GBB"	(lumieres)		{ zwave="19" }
+Switch	LumiereEscalier		"Lumiere Escalier"	(lumieres)		{ zwave="20" }
+Switch	LumiereEntree		"Lumiere Entree"	(lumieres)		{ zwave="21" }
+Switch	LumiereCouloirHaut	"Lumiere Couloir Etage"	(lumieres)		{ zwave="22" }
+Switch	LumiereBureau		"Lumiere Bureau"	(lumieres)		{ zwave="23" }
+
+/* Prises commandées */
+Switch	FibaroPlug_1	"Fibaro plug #1" <socket> (prises, entree_mode_eco)			{ zwave="5:command=switch_binary" }
+Number	FibaroPlug_1_Power	"Fibaro plug #1 power  [%.0f W]"		(zPower){ zwave="5:command=sensor_multilevel" }
+Number	FibaroPlug_1_Energy	"Fibaro plug #1 consumption  [%.0f KWh]"	(zPower){ zwave="5:command=meter" }
+
+Switch	FibaroPlug_2	"Fibaro plug #2" <socket> 	(prises, entree_mode_eco)		{ zwave="11:command=switch_binary" }
+Number	FibaroPlug_2_Power	"Fibaro plug #2 power  [%.0f W]"		(zPower){ zwave="11:command=sensor_multilevel" }
+Number	FibaroPlug_2_Energy	"Fibaro plug #2 consumption  [%.0f KWh]"	(zPower){ zwave="11:command=meter" }
+
+Switch	FibaroPlug_3	"Fibaro plug #3" <socket> 	(prises, entree_mode_eco)		{ zwave="17:command=switch_binary" }
+Number	FibaroPlug_3_Power	"Fibaro plug #3 power  [%.0f W]"		(zPower){ zwave="17:command=sensor_multilevel" }
+Number	FibaroPlug_3_Energy	"Fibaro plug #3 consumption  [%.0f KWh]"	(zPower){ zwave="17:command=meter" }
+
+Switch	PoppPlug	"Popp plug" <socket> 	(prises, entree_mode_eco, sortie_mode_eco)		{ zwave="9:command=switch_binary" }
+
+Switch	FibaroPlug_TVRdC	"Fibaro plug TV RdC" <socket> 	(prises)		{ zwave="10:command=switch_binary" }
+Number	FibaroPlug_TVRdC_Power	"Fibaro plug TVRdC power  [%.0f W]"		(zPower){ zwave="10:command=sensor_multilevel" }
+Number	FibaroPlug_TVRdC_Energy	"Fibaro plug TVRdC consumption  [%.0f KWh]"	(zPower){ zwave="10:command=meter" }
+
+/* Interrupteur mural de gestion du mode eco */
+
+Switch	WallSwitch_Scene1	"Wallswitch scene 1" 	(scenes)	{ zwave="25:1:command=SCENE_ACTIVATION,scene=1,state=1"}
+Switch	WallSwitch_Scene2	"Wallswitch scene 2" 	(scenes)	{ zwave="25:1:command=SCENE_ACTIVATION,scene=2,state=1"}
+
+/* Controle du ruban LED RGBW*/
+
+Group gRGBW "RGBW Light" <colorwheel>
+
+Dimmer RGBWControllerAll "RGBW Light Control [%d %%]" <switch> (gRGBW) {zwave="24"}
+Color RGBW "RGBW Light Color Picker" <slider> (gRGBW)
+Dimmer RGBWControllerR "RGBW Light Red [%d %%]" <switch> {zwave="24:2"}
+Dimmer RGBWControllerB "RGBW Light Blue [%d %%]" <switch> {zwave="24:3"}
+Dimmer RGBWControllerG "RGBW Light Green [%d %%]" <switch> {zwave="24:4"}
+Dimmer RGBWControllerW "RGBW Light White [%d %%]" <switch> {zwave="24:5"}

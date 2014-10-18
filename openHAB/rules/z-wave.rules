@@ -1,0 +1,32 @@
+rule "Activation Mode Eco via Wallswitch"
+when
+	Item WallSwitch_Scene2 received update ON
+then
+	sendCommand(entree_mode_eco, OFF)
+
+	sendCommand(RGBWControllerR, 0)
+	sendCommand(RGBWControllerG, 0)
+	sendCommand(RGBWControllerB, 100)
+
+	createTimer(now.plusSeconds(2)) [| 
+		sendCommand(RGBWControllerAll, OFF)
+	]
+
+end
+
+rule "Desactivation Mode Eco via Wallswitch"
+when
+	Item WallSwitch_Scene1 received update ON
+then
+	sendCommand(sortie_mode_eco, ON)
+
+	sendCommand(RGBWControllerR, 0)
+	sendCommand(RGBWControllerG, 100)
+	sendCommand(RGBWControllerB, 0)
+
+	createTimer(now.plusSeconds(2)) [| 
+		sendCommand(RGBWControllerAll, OFF)
+	]
+
+
+end

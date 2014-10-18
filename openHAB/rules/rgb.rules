@@ -1,0 +1,20 @@
+import org.openhab.core.library.types.*
+
+var HSBType hsbValue
+var String redValue
+var String blueValue
+var String greenValue
+
+rule "Set RGB Value"
+when
+	Item RGBW changed
+then
+	hsbValue = RGBW.state as HSBType
+        redValue = hsbValue.red.intValue.toString
+        greenValue = hsbValue.green.intValue.toString
+        blueValue = hsbValue.blue.intValue.toString
+
+        sendCommand(RGBWControllerR,redValue)
+        sendCommand(RGBWControllerG,greenValue)
+        sendCommand(RGBWControllerB,blueValue)
+end

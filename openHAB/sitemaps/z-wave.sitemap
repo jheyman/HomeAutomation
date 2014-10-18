@@ -1,0 +1,27 @@
+sitemap my_z_wave label="Z-Wave devices control" {
+
+   Frame label="Lumieres" {
+	Switch item=lumieres mappings=[OFF="Tout eteindre"]
+	Group item=lumieres label="Detail"
+   }
+
+   Frame label="Mode eco" {
+	Switch item=entree_mode_eco mappings=[OFF="Tout eteindre"] icon="energy"
+	Group item=entree_mode_eco label="Detail/entree"
+	Group item=sortie_mode_eco label="Detail/sortie"
+   }
+
+
+   Frame label="Conso prises" {
+        Text item=FibaroPlug_1_Power
+        Text item=FibaroPlug_2_Power
+        Text item=FibaroPlug_3_Power
+        Text item=FibaroPlug_TVRdC_Power
+   }
+
+    Frame label="RGB"
+    {
+        Group item=gRGBW
+    }
+
+ }
