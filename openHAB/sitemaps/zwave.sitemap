@@ -1,4 +1,5 @@
-sitemap my_z_wave label="Z-Wave devices control" {
+sitemap my_z_wave label="Z-Wave devices control" 
+{
 
    Frame label="Lumieres" {
 	Switch item=lumieres mappings=[OFF="Tout eteindre"]

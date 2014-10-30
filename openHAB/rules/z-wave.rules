@@ -1,6 +1,11 @@
 rule "Activation Mode Eco via Wallswitch"
 when
-	Item WallSwitch_Scene2 received update ON
+	Item WallSwitch_Scene2 received update ON or
+	Item WallSwitch_Scene4 received update ON or
+	Item WallSwitch_Scene6 received update ON or
+	Item WallSwitch_Scene12 received update ON or
+	Item WallSwitch_Scene14 received update ON or
+	Item WallSwitch_Scene16 received update ON
 then
 	sendCommand(entree_mode_eco, OFF)
 
@@ -16,7 +21,12 @@ end
 
 rule "Desactivation Mode Eco via Wallswitch"
 when
-	Item WallSwitch_Scene1 received update ON
+	Item WallSwitch_Scene1 received update ON or
+	Item WallSwitch_Scene3 received update ON or
+	Item WallSwitch_Scene5 received update ON or
+	Item WallSwitch_Scene11 received update ON or
+	Item WallSwitch_Scene13 received update ON or
+	Item WallSwitch_Scene15 received update ON
 then
 	sendCommand(sortie_mode_eco, ON)
 

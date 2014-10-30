@@ -12,7 +12,6 @@ Switch	LumiereEscalier		"Lumiere Escalier"	(lumieres,entree_mode_eco)		{ zwave="
 Switch	LumiereEntree		"Lumiere Entree"	(lumieres,entree_mode_eco)		{ zwave="21" }
 Switch	LumiereCouloirHaut	"Lumiere Couloir Etage"	(lumieres,entree_mode_eco)		{ zwave="22" }
 Switch	LumiereBureau		"Lumiere Bureau"	(lumieres,entree_mode_eco)		{ zwave="23" }
-Switch	LumiereGarage		"Lumiere Garage"	(lumieres,entree_mode_eco)		{ zwave="26" }
 
 /* Prises commandées */
 Switch	FibaroPlug_1	"Fibaro plug #1" <socket> (prises, entree_mode_eco)		{ zwave="5:command=switch_binary" }

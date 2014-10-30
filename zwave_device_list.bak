@@ -13,4 +13,5 @@ Lumiere Escalier = Node 20
 Lumiere Entree = Node 21
 Lumiere Couloir Haut = Node 22
 Lumiere Bureau = Node 23
+Lumiere Garage = Node 26
 Fibaro RGBW = Node 24
