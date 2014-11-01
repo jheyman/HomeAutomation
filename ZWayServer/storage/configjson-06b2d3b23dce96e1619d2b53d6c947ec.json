@@ -1,0 +1,128 @@
+{
+"controller":{},
+
+"vdevInfo":{
+//FIBARO plug #1
+	"ZWayVDev_5:0:37":{"deviceType":"switchBinary","metrics":{"level":"off","icon":"switch","title":"Switch 5:0"},"location":null,"tags":[]},
+	"ZWayVDev_5:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":0,"icon":"energy","title":"Sensor 5:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_5:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":0.19,"icon":"meter","title":"Meter 5:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_5:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":0,"icon":"meter","title":"Meter 5:0:50:2"},"location":null,"tags":[]},
+	
+// Halogene Salon
+	"ZWayVDev_8:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 8:0"},"location":null,"tags":[]},
+	
+// POPP plug
+	"ZWayVDev_9:0:37":{"deviceType":"switchBinary","metrics":{"level":"off","icon":"switch","title":"Switch 9:0"},"location":null,"tags":[]},
+
+// Fibaro plug TVRdC
+	"ZWayVDev_10:0:37":{"deviceType":"switchBinary","metrics":{"level":"on","icon":"switch","title":"Switch 10:0"},"location":null,"tags":[]},
+	"ZWayVDev_10:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":13.9,"icon":"energy","title":"Sensor 10:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_10:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":15.3,"icon":"meter","title":"Meter 10:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_10:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":16.5,"icon":"meter","title":"Meter 10:0:50:2"},"location":null,"tags":[]},
+
+//FIBARO plug #2	
+	"ZWayVDev_11:0:37":{"deviceType":"switchBinary","metrics":{"level":"off","icon":"switch","title":"Switch 11:0"},"location":null,"tags":[]},
+	"ZWayVDev_11:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":0,"icon":"energy","title":"Sensor 11:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_11:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":0,"icon":"meter","title":"Meter 11:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_11:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":0,"icon":"meter","title":"Meter 11:0:50:2"},"location":null,"tags":[]},
+	
+// ?????
+	"ZWayVDev_12:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":0,"icon":"energy","title":"Sensor 12:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_12:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":0.14,"icon":"meter","title":"Meter 12:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_12:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":0,"icon":"meter","title":"Meter 12:0:50:2"},"location":null,"tags":[]},
+	"ZWayVDev_12:0:37":{"deviceType":"switchBinary","metrics":{"level":"off","icon":"switch","title":"Switch 12:0"},"location":null,"tags":[]},
+	
+// Lumière SdBTBB
+	"ZWayVDev_14:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 14:0"},"location":null,"tags":[]},
+	
+// ?????
+	"ZWayVDev_13:0:128":{"deviceType":"battery","metrics":{"probeTitle":"Battery","scaleTitle":"%","level":100,"icon":"battery","title":"Battery 13:0"},"location":null,"tags":[]},
+	
+// Lumière Dressing	
+	"ZWayVDev_16:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 16:0"},"location":null,"tags":[]},
+
+//FIBARO plug #3	
+	"ZWayVDev_17:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":0,"icon":"energy","title":"Sensor 17:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_17:0:37":{"deviceType":"switchBinary","metrics":{"level":"off","icon":"switch","title":"Switch 17:0"},"location":null,"tags":[]},
+	"ZWayVDev_17:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":0,"icon":"meter","title":"Meter 17:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_17:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":0,"icon":"meter","title":"Meter 17:0:50:2"},"location":null,"tags":[]},
+	
+// Lumiere chambre
+	"ZWayVDev_18:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 18:0"},"location":null,"tags":[]},
+	
+// Lumiere SdB GBB
+	"ZWayVDev_19:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 19:0"},"location":null,"tags":[]},
+	
+// Lumiere escalier
+	"ZWayVDev_20:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 20:0"},"location":null,"tags":[]},
+	
+// Lumiere Entree
+	"ZWayVDev_21:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 21:0"},"location":null,"tags":[]},
+	
+// Lumiere Couloir Haut
+	"ZWayVDev_22:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 22:0"},"location":null,"tags":[]},
+	
+// Lumiere Bureau
+	"ZWayVDev_23:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 23:0"},"location":null,"tags":[]},
+	
+// Fibaro RGBW
+	"ZWayVDev_24:0:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:0"},"location":null,"tags":[]},
+
+	"ZWayVDev_24:0:49:4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Power","scaleTitle":"W","level":0,"icon":"energy","title":"Sensor 24:0:49:4"},"location":null,"tags":[]},
+	"ZWayVDev_24:0:50:0":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"kWh","level":0,"icon":"meter","title":"Meter 24:0:50:0"},"location":null,"tags":[]},
+	"ZWayVDev_24:0:50:2":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Electric ","scaleTitle":"W","level":16.4,"icon":"meter","title":"Meter 24:0:50:2"},"location":null,"tags":[]},
+
+	// B channel
+	"ZWayVDev_24:2:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:2"},"location":null,"tags":[]},
+	// R channel
+	"ZWayVDev_24:3:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:3"},"location":null,"tags":[]},
+	// G channel
+	"ZWayVDev_24:4:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:4"},"location":null,"tags":[]},
+	// W channel
+	"ZWayVDev_24:5:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:5"},"location":null,"tags":[]},
+	// ????
+	"ZWayVDev_24:1:38":{"deviceType":"switchMultilevel","metrics":{"level":0,"icon":"multilevel","title":"Dimmer 24:1"},"location":null,"tags":[]},
+	
+// Wall switch controller
+	"ZWayVDev_25:0:128":{"deviceType":"battery","metrics":{"probeTitle":"Battery","scaleTitle":"%","level":100,"icon":"battery","title":"Battery 25:0"},"location":null,"tags":[]},
+	
+// Lumiere Garage
+	"ZWayVDev_26:0:38":{"deviceType":"switchMultilevel","metrics":{"level":99,"icon":"multilevel","title":"Dimmer 26:0"},"location":null,"tags":[]},
+	
+// Misc
+	"OpenWeather_4":{"deviceType":"sensorMultilevel","metrics":{"probeTitle":"Temperature","scaleTitle":"°C","level":12.5,"icon":"http://openweathermap.org/img/w/01d.png","title":"Paris"},"location":null,"tags":[]}
+	},
+
+	"locations":[],
+
+	"profiles":[
+		{
+		"id":1,
+		"name":"Default",
+		"description":"This is default profile. Default profile created automatically.",
+		"widgets":
+			[
+				{"id":"ZWayVDev_5:0:37","position":{"x":390.296875,"y":240},"show":true},
+				{"id":"ZWayVDev_5:0:50:2","position":{"x":0.15625,"y":-60},"show":true}
+			],
+		"active":true
+		}
+	],
+
+	"instances":[
+		{"id":1,"moduleId":"ZWaveGate","params":{"title":"Z-Wave device creator"},"userView":false},
+		{"id":2,"moduleId":"Cron","params":{"title":"Cron scheduler"},"userView":false},
+		{"id":3,"moduleId":"OpenRemoteHelpers","params":{"title":"OpenRemote helper"}},
+		{"id":4,"moduleId":"OpenWeather","params":{"title":"Weather Informer","description":"Weather informer provided by OpenWeatherMap.org","units":"celsius","city":"Paris","country":"France","status":"enable"},"userView":true},
+		{"id":5,
+		 "moduleId":"BindDevices",
+		 "params":{
+		 	"title":"Bind devices",
+		 	"description":"Bind actions on one device to others",
+		 	"sourceDevices":["ZWayVDev_17:0:37"],
+		 	"targetDevices":["ZWayVDev_21:0:38"],
+		 	"status":"enable"
+		 	},
+		 "userView":true}
+	]
+}

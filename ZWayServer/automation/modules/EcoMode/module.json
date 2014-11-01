@@ -1,0 +1,61 @@
+{
+	"autoload": true,
+	"singleton": true,
+	"userView": true,
+	"defaults": {
+		"title": "Eco mode",
+		"description": "Turns select devices on/off upon entering/leaving eco mode",
+		"ecoOnDevices": [],
+		"ecoOffDevices": []
+	},
+	"schema": {
+		"type": "object",
+		"properties": {
+			"ecoOnDevices": {
+				"type": "array",
+				"items": {
+					"field": "enum",
+					"datasource": "namespaces",
+					"enum": "namespaces:devices_switchControl:deviceId,namespaces:devices_switchBinary:deviceId,namespaces:devices_switchMultilevel:deviceId",
+					"required": true
+				}
+			},
+			"ecoOffDevices": {
+				"type": "array",
+				"items": {
+					"field": "enum",
+					"datasource": "namespaces",
+					"enum": "namespaces:devices_switchBinary:deviceId,namespaces:devices_switchMultilevel:deviceId,namespaces:devices_doorlock:deviceId",
+					"required": true
+				}
+			}
+		},
+		"required": false
+	},
+	"options": {
+		"fields": {
+			"ecoOnDevices": {
+				"label": "List of devices to turn off upon eco mode",
+				"fields": {
+					"item": {
+						"type": "select",
+						"datasource": "namespaces",
+						"field": "optionLabels",
+						"optionLabels": "namespaces:devices_switchControl:deviceName,namespaces:devices_switchBinary:deviceName,namespaces:devices_switchMultilevel:deviceName"
+					}
+				}
+			},
+			"ecoOffDevices": {
+				"label": "List of devices to turn on upon leaving eco mode",
+				"fields": {
+					"item": {
+						"type": "select",
+						"datasource": "namespaces",
+						"field": "optionLabels",
+						"optionLabels": "namespaces:devices_switchBinary:deviceName,namespaces:devices_switchMultilevel:deviceName,namespaces:devices_doorlock:deviceName"
+					}
+				}
+			}
+		}
+	}
+}
