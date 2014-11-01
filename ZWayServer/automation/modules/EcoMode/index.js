@@ -43,10 +43,10 @@ EcoMode.prototype.init = function (config) {
 		
 		if (value === 2) {
 			
-			// Turn on the LED to show ongoing transition to ECO mode
+			// Turn on the LED (full blue) to show ongoing transition to ECO mode
 			zway.devices[24].instances[3].SwitchMultilevel.Set(0);
 			zway.devices[24].instances[4].SwitchMultilevel.Set(0);
-			zway.devices[24].instances[2].SwitchMultilevel.Set(98);
+			zway.devices[24].instances[2].SwitchMultilevel.Set(99);
 
 			//FIBARO plug #1
 			zway.devices[5].instances[0].SwitchBinary.Set(0);
@@ -103,9 +103,9 @@ EcoMode.prototype.init = function (config) {
 			    }, 2*1000);
 
 	        } else if (value === 1) {
-			// Turn on the LED to show ongoing transition out of ECO mode
+			// Turn on the LED (full green) to show ongoing transition out of ECO mode
 			zway.devices[24].instances[3].SwitchMultilevel.Set(0);
-			zway.devices[24].instances[4].SwitchMultilevel.Set(98);
+			zway.devices[24].instances[4].SwitchMultilevel.Set(99);
 			zway.devices[24].instances[2].SwitchMultilevel.Set(0);
 
 			//FIBARO plug #1
