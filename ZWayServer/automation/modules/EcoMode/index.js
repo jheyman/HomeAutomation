@@ -57,8 +57,8 @@ EcoMode.prototype.init = function (config) {
 			// Halogene Salon
 			zway.devices[8].instances[0].SwitchMultilevel.Set(0);
 
-			// POPP plug
-			zway.devices[9].instances[0].SwitchBinary.Set(0);
+			// POPP plug (Pi radio sdb tbb)
+			//zway.devices[9].instances[0].SwitchBinary.Set(0);
 
 			// Fibaro plug TVRdC
 			zway.devices[10].instances[0].SwitchBinary.Set(0);
@@ -117,7 +117,7 @@ EcoMode.prototype.init = function (config) {
 			//FIBARO plug #1
 			//zway.devices[5].instances[0].SwitchBinary.Set(255);
 
-			// POPP plug
+			// POPP plug (Pi radio sdb tbb)
 			//zway.devices[9].instances[0].SwitchBinary.Set(255);
 
 			// Fibaro plug TVRdC
