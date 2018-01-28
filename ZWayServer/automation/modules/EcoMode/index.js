@@ -64,36 +64,31 @@ EcoMode.prototype.init = function (config) {
 				// Turn on the LED (full blue) to show ongoing transition to ECO mode
 				//blue
 				setMultiLevelDevice(24,2,99)
-		
 				//red
 				setMultiLevelDevice(24,3,0)
-
 				// green	
 				setMultiLevelDevice(24,4,0)
 
-				//FIBARO plug #1
+				//FIBARO plug #1 / prise salon table
 				setBinaryDevice(5,0,0)
+
+				//FIBARO plug #2 / Halogene salon
+				setBinaryDevice(11,0,0)
+
+				//FIBARO plug #3 / Strip LED bibliothèque
+				setBinaryDevice(17,0,0)
 
 				// Halogene Salon
 				setMultiLevelDevice(8,0,0)
 
-				// POPP plug (Pi radio sdb tbb)
-				//setBinaryDevice(9,0,0)
-				
 				// Fibaro plug TVRdC
 				setBinaryDevice(10,0,0)
-
-				//FIBARO plug #2	
-				setBinaryDevice(11,0,0)
 
 				// Lumière SdBTBB
 				setMultiLevelDevice(14,0,0)
 
 				// Lumière Dressing	
 				setMultiLevelDevice(16,0,0)
-
-				//FIBARO plug #3	
-				setBinaryDevice(17,0,0)
 
 				// Lumiere chambre
 				setMultiLevelDevice(18,0,0)
@@ -140,11 +135,14 @@ EcoMode.prototype.init = function (config) {
 				// blue
 				setMultiLevelDevice(24,2,0)
 
-				//FIBARO plug #1
-				//setBinaryDevice(5,0,255)
+				//FIBARO plug #1 / prise salon table
+				setBinaryDevice(5,0,255)
 
-				// POPP plug (Pi radio sdb tbb)
-				setBinaryDevice(9,0,255)
+				//FIBARO plug #2 / Halogene salon
+				setBinaryDevice(11,0,255)
+
+				//FIBARO plug #3 §trip LED bibliiothèque
+				setBinaryDevice(17,0,255)
 
 				// Fibaro plug TVRdC
 				setBinaryDevice(10,0,255)
