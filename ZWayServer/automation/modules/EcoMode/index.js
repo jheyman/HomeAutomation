@@ -135,13 +135,16 @@ EcoMode.prototype.init = function (config) {
 				// blue
 				setMultiLevelDevice(24,2,0)
 
+				// Lampe table salon
+				setMultiLevelDevice(8,0,255)
+
 				//FIBARO plug #1 / prise salon table
 				setBinaryDevice(5,0,255)
 
 				//FIBARO plug #2 / Halogene salon
 				setBinaryDevice(11,0,255)
 
-				//FIBARO plug #3 §trip LED bibliiothèque
+				//FIBARO plug #3 §trip LED bibliothèque
 				setBinaryDevice(17,0,255)
 
 				// Fibaro plug TVRdC
